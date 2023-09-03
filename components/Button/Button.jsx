@@ -11,7 +11,7 @@ function Button({
   return (
     <button
       className={cn(
-        "bg-gradient-to-r from-primary-ravcare to-secondary-ravcare opacity-90 hover:opacity-100 hover:-translate-y-1 transition-all duration-200 text-sm lg:text-base   w-full   py-2 px-7 h-14 text-white font-semibold flex items-center justify-center rounded-[100px] gap-2 button-shadow " +
+        "bg-gradient-to-r from-primary-ravcare to-secondary-ravcare opacity-90 hover:opacity-100 hover:-translate-y-1 transition-all duration-200 text-sm lg:text-base w-full py-2 px-7 h-14 text-white font-semibold flex items-center justify-center rounded-[100px] gap-2 button-shadow" +
           sora.className,
         className
       )}

@@ -35,8 +35,8 @@ export default function Benefit() {
             <p
               className={`mt-4 text-text-color-ravcare max-w-[500px] ${sora.className}`}
             >
-              Pelayanan terbaik dari para ahli medis yang berpengalaman kami
-              siap melayani Anda dengan kualitas terdepan untuk menjaga
+              Pelayanan terbaik dari para ahli medis yang berpengalaman dari
+              kami siap melayani Anda dengan kualitas terdepan untuk menjaga
               kesehatan dan kesejahteraan Anda.
             </p>
             <Link href={"/reservasi"} className="w-fit lg:w-[30%]">
