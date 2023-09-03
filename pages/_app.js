@@ -1,16 +1,26 @@
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import "@/styles/globals.css";
-import { Manrope } from "next/font/google";
+import { Poppins } from "next/font/google";
+import Head from "next/head";
 
-const manrope = Manrope({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className={manrope.className}>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <title>RavCare</title>
+        <link rel="icon" href="/assets/health-icon.svg" />
+      </Head>
+      <div className={poppins.className}>
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
+    </>
   );
 }

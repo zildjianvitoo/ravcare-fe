@@ -1,7 +1,16 @@
+import Benefit from "@/components/LandingPage/Benefit";
+import DaftarLayanan from "@/components/LandingPage/DaftarLayanan";
+import Jumbotron from "@/components/LandingPage/Jumbotron";
+import Partner from "@/components/LandingPage/Partner";
+
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-4xl">ZILDJIAN VITO</h1>
-    </div>
+    <main className="bg-[#f9fbfc]">
+      <Jumbotron />
+      <Partner />
+      <DaftarLayanan />
+
+      <Benefit />
+    </main>
   );
 }
