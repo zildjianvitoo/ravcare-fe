@@ -16,8 +16,8 @@ export default function DokterCard({ dokter }) {
     hospital,
   } = dokter;
   return (
-    <div className="p-3 lg:p-5">
-      <figure>
+    <div className="p-3 w-fit lg:p-5">
+      <figure className=" w-fit">
         <Image
           src={photo}
           alt={"Foto Dokter"}
