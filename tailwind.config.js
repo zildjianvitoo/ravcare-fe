@@ -15,7 +15,7 @@ module.exports = {
         "yellow-ravcare": "#feb60d",
         "purple-ravcare": "#9771ff",
         "iris-blue-ravcare": "#01b5c5",
-        "heading-color-ravcare": "#181a1e",
+        "heading-color-ravcare": "#031432",
         "text-color-ravcare": "#6C87AE",
       },
       boxShadow: {
