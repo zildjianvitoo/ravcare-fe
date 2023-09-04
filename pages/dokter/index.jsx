@@ -1,5 +1,10 @@
+import DokterList from "@/components/Dokter/DokterList";
 import React from "react";
 
 export default function Dokter() {
-  return <div>index</div>;
+  return (
+    <main>
+      <DokterList />
+    </main>
+  );
 }

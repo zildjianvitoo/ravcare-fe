@@ -1,12 +1,12 @@
-import doctorImg01 from "../images/doctor-img01.png";
-import doctorImg02 from "../images/doctor-img02.png";
-import doctorImg03 from "../images/doctor-img03.png";
+import doctorImg01 from "@/public/assets/images/doctor-img01.jpg";
+import doctorImg02 from "@/public/assets/images/doctor-img02.jpg";
+import doctorImg03 from "@/public/assets/images/doctor-img03.jpg";
 
-export const doctors = [
+export const dokter = [
   {
     id: "01",
-    name: "Dr. Alfaz Ahmed",
-    specialty: "Surgeon",
+    name: "Dr. Zildjian Vito",
+    specialization: "Surgeon",
     avgRating: 4.8,
     totalRating: 272,
     photo: doctorImg01,
@@ -15,8 +15,8 @@ export const doctors = [
   },
   {
     id: "02",
-    name: "Dr. Saleh Mahmud",
-    specialty: "Neurologist",
+    name: "Dr. Victoria Secret",
+    specialization: "Neurologist",
     avgRating: 4.8,
     totalRating: 272,
     photo: doctorImg02,
@@ -25,8 +25,8 @@ export const doctors = [
   },
   {
     id: "03",
-    name: "Dr. Farid Uddin",
-    specialty: "Dermatologist",
+    name: "Dr. Eve Alexandra",
+    specialization: "Dermatologist",
     avgRating: 4.8,
     totalRating: 272,
     photo: doctorImg03,

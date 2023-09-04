@@ -7,7 +7,7 @@ export default function LayananCard({ item, index }) {
   const { name, desc, bgColor, textColor } = item;
   return (
     <div className="py-[30px] px-3 lg:px-5">
-      <h2 className="text-[26px] leading-9 text-heading-color-ravcare font-bold">
+      <h2 className="text-[26px] leading-9 text-transparent bg-clip-text bg-gradient-to-r from-primary-ravcare to-secondary-ravcare font-bold  w-fit ">
         {name}
       </h2>
       <p
