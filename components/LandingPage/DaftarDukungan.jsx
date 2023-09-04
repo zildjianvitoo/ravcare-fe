@@ -1,6 +1,6 @@
-import LayananCard from "../Card/LayananCard";
+import DaftarDukunganCard from "../Card/DaftarDukunganCard";
 
-const daftarLayanan = [
+const daftarDukungan = [
   {
     id: 23244,
     title: "RS 24 Jam",
@@ -33,14 +33,14 @@ import { RiHospitalLine } from "react-icons/ri";
 import { BsHeartPulse } from "react-icons/bs";
 import { sora } from "@/public/fonts";
 
-export default function DaftarLayanan() {
+export default function DaftarDukungan() {
   return (
     <section className="py-10 lg:py-28">
       <div className="container ">
         <div className="flex flex-col ">
           <div className="flex flex-col justify-between lg:flex-row">
             <h3 className="font-semibold text-[32px] text-[#031432] ">
-              Daftar Layanan
+              Daftar Dukungan
             </h3>
             <p
               className={`text-text-color-ravcare ${sora.className} mt-4 lg:mt-0`}
@@ -52,8 +52,8 @@ export default function DaftarLayanan() {
             </p>
           </div>
           <div className="flex flex-wrap justify-center mt-14 lg:flex-row gap-9">
-            {daftarLayanan.map((item) => (
-              <LayananCard
+            {daftarDukungan.map((item) => (
+              <DaftarDukunganCard
                 key={item.id}
                 icon={item.icon}
                 title={item.title}

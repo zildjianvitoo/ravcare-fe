@@ -58,11 +58,22 @@ const quickLinks2 = [
   },
 ];
 
+const quickLinks3 = [
+  {
+    path: "/",
+    name: "Tentang Kami",
+  },
+  {
+    path: "/",
+    name: "Donasi",
+  },
+];
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="pt-10 pb-16 ">
+    <footer className="pt-10 pb-16 bg-[#f2f7ff]">
       <div className="container">
         <div className="flex flex-col flex-wrap justify-between md:flex-row  gap-[30px]  ">
           <div>
@@ -137,7 +148,7 @@ export default function Footer() {
               Dukungan
             </h2>
             <ul className="flex flex-col gap-4">
-              {quickLinks1.map((link, index) => (
+              {quickLinks3.map((link, index) => (
                 <li key={index}>
                   <Link
                     href={link.path}

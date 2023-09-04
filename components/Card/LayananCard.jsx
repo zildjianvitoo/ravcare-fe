@@ -1,52 +1,38 @@
-import { cn } from "@/utils/cn";
-import Image from "next/image";
-import React from "react";
 import { sora } from "@/public/fonts";
 import Link from "next/link";
-import Button from "../Button/Button";
-import { RiHealthBookLine } from "react-icons/ri";
+import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 
-export default function LayananCard({
-  icon,
-  title,
-  description,
-  bgStyle = "",
-  withImage,
-}) {
+export default function LayananCard({ item, index }) {
+  const { name, desc, bgColor, textColor } = item;
   return (
-    <div className="flex flex-col p-6 bg-white md:p-8 rounded-3xl layanan-card-shadow ">
-      <div
-        className={cn(
-          "grid w-20 h-20 rounded-full place-items-center",
-          bgStyle
-        )}
-      >
-        {withImage ? (
-          <Image
-            src={"/assets/images/LandingPage/doctor-icon.svg"}
-            alt="Doctor Icon"
-            width={50}
-            height={50}
-          />
-        ) : (
-          icon
-        )}
-      </div>
-      <h4 className="mt-6 text-2xl font-medium">{title}</h4>
-
+    <div className="py-[30px] px-3 lg:px-5">
+      <h2 className="text-[26px] leading-9 text-heading-color-ravcare font-bold">
+        {name}
+      </h2>
       <p
-        className={`mt-3 line-clamp-3 text-text-color-ravcare w-[240px] xxs:w-[300px] xs:w-[330px] ${sora.className}`}
+        className={`text-[16px] leading-7 font-normal text-text-color-ravcare line-clamp-3 mt-4 ${sora.className}`}
       >
-        {description}
+        {desc}
       </p>
-      <Link href={"/reservasi"} className="mt-6 ">
-        <Button
-          icon={<RiHealthBookLine className="mb-0.5 text-2xl" />}
-          className={"text-lg"}
+      <div className="flex items-center justify-between mt-[30px]">
+        <Link
+          href={"/dokter"}
+          className="w-[44px] h-[44px] rounded-full border border-[#181a1e]  flex items-center justify-center group hover:bg-primary-ravcare hover:border-none"
         >
-          Reservasi
-        </Button>
-      </Link>
+          <BsArrowRight className="w-6 h-5 group-hover:text-white" />
+        </Link>
+        <span
+          className="w-[44px] h-[44px] flex items-center justify-center text-[18px] leading-[30px] font-semibold"
+          style={{
+            background: `${bgColor}`,
+            color: `${textColor}`,
+            borderRadius: "6px 0 0 6px",
+          }}
+        >
+          {index + 1}
+        </span>
+      </div>
     </div>
   );
 }
