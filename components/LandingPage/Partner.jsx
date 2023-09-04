@@ -35,9 +35,9 @@ export default function Partner() {
           </figure>
           <figure className="w-[130px] h-[130px] md:w-[135px] md:h-[110px] lg:w-[175px] lg:h-[150px] xl:w-[150px] xl:h-[200px] object-cover relative ">
             <Image
-              src={"/assets/images/LandingPage/logo-rsmuhammadiyah.webp"}
+              src={"/assets/images/LandingPage/logo-rscharitas.png"}
               alt="RS Bari Logo"
-              className="object-contain"
+              className="object-contain scale-[0.65] xl:scale-75 xl:-translate-x-8"
               fill
             />
           </figure>
