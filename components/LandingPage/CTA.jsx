@@ -9,7 +9,7 @@ export default function CTA() {
   return (
     <section className="py-14">
       <div className="container">
-        <div className="flex flex-col items-center justify-center rounded-[32px] bg-gradient-to-r from-primary-ravcare to-secondary-ravcare shadow-2xl shadow-[#3F87F7]/[20%] w-full py-16 text-center">
+        <div className="flex flex-col items-center justify-center rounded-[32px] bg-gradient-to-r from-primary-ravcare to-secondary-ravcare shadow-2xl shadow-[#3F87F7]/[20%] px-6 w-full py-16 text-center">
           <h3 className="font-semibold text-[26px] xs:text-[32px] md:text-2xl  lg:text-[32px] text-white ">
             {" "}
             Reservasi Pelayanan Kami Sekarang
@@ -19,11 +19,11 @@ export default function CTA() {
             siap melayani Anda dengan kualitas terdepan untuk menjaga kesehatan
             dan kesejahteraan Anda.
           </p>
-          <div className="flex items-center gap-8 mt-10">
-            <Link href="/dokter" className="w-fit">
+          <div className="flex flex-col items-center gap-8 mt-10 xs:flex-row">
+            <Link href="/dokter" className="w-[95%] xs:w-fit">
               <Button
                 className={
-                  "bg-none border border-white hover:bg-white hover:text-primary-ravcare group"
+                  "text-sm xs:text-base bg-none border border-white hover:bg-white hover:text-primary-ravcare group"
                 }
                 icon={
                   <IoCalendarOutline className="mb-1 text-2xl text-white group-hover:text-primary-ravcare " />
@@ -32,7 +32,7 @@ export default function CTA() {
                 Cek Jadwal Dokter
               </Button>
             </Link>
-            <Link href={"/reservasi"} className="w-fit">
+            <Link href={"/reservasi"} className="w-[95%] xs:w-fit">
               <Button
                 className="text-base from-white to-white text-primary-ravcare"
                 icon={

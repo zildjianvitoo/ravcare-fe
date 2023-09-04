@@ -92,29 +92,6 @@
   }
 }
 
-.swiper_container {
-  height: 22rem;
-  padding: 2rem 0;
-}
-
-.swiper-slide {
-  width: 20rem;
-  height: 12rem;
-}
-
-.swiper-slide img {
-  width: 20rem;
-  height: 22rem;
-  border-radius: 2rem;
-  object-fit: cover;
-  margin: 0 auto;
-}
-
-.swiper-slide-shadow-left,
-.swiper-slide-shadow-right {
-  display: none;
-}
-
-.slider-controler .slider-arrow::after {
-  content: "";
+.slick-dots li button:before {
+  color: orange;
 }

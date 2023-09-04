@@ -29,6 +29,7 @@ export default function Jumbotron() {
                 alt="Jumbotron Image"
                 width={530}
                 height={610}
+                priority={true}
               />
             </figure>
             <figure className="absolute bottom-4">

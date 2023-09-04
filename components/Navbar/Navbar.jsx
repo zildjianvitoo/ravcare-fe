@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { BiMenu } from "react-icons/bi";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { sora } from "@/public/fonts";
 import { PiStethoscopeDuotone } from "react-icons/pi";
 import Button from "../Button/Button";
+import { GrClose } from "react-icons/gr";
 
 const navLinks = [
   {
@@ -79,6 +80,8 @@ export default function Navbar() {
           </div>
           <div className="navigation" ref={menuRef} onClick={toggleMenu}>
             <ul className="flex items-center menu gap-[2.7rem]">
+              <GrClose className="absolute block text-2xl top-9 right-7 lg:hidden" />
+
               <Link href={"/register"} className="block lg:hidden">
                 <Button>Register Pasien</Button>
               </Link>
