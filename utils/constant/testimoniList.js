@@ -3,7 +3,7 @@ export const testimoniList = [
     id: 0,
     name: "Vito",
     profilePic: "/assets/images/patient-avatar.png",
-    job: "Student at Teknik Infomatika",
+    job: "Mahasiswa di Teknik Infomatika",
     rating: 5,
     review:
       "Website yang menarik membuat saya tau kapan harus ke dokter , terimakasih RavCare *emotLove",
@@ -12,7 +12,7 @@ export const testimoniList = [
     id: 1,
     name: "Azka",
     profilePic: "/assets/images/patient-avatar.png",
-    job: "Student at Teknik Informatika",
+    job: "Mahasiswa di Teknik Infomatika",
     rating: 5,
     review:
       "RavCare membantu saya dengan cepat mengetahui kapan harus mengunjungi dokter. Terimakasih atas layanan yang berguna!",
@@ -21,7 +21,7 @@ export const testimoniList = [
     id: 2,
     name: "Raihan",
     profilePic: "/assets/images/patient-avatar.png",
-    job: "Student at Teknik Informatika",
+    job: "Mahasiswa di Teknik Infomatika",
     rating: 4,
     review:
       "sejauh ini sih sangat okeee tapi kedepannya harus dikembangkan lagi yaa websitenyaa , goodjob!!",
@@ -30,7 +30,7 @@ export const testimoniList = [
     id: 3,
     name: "Zildjian",
     profilePic: "/assets/images/patient-avatar.png",
-    job: "Student at Teknik Informatika",
+    job: "Mahasiswa di Teknik Infomatika",
     rating: 5,
     review:
       "Website RavCare sangat membantu saya mengatur janji dengan dokter secara efisien. Terimakasih atas kemudahannya!",

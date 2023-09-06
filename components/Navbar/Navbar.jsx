@@ -82,7 +82,7 @@ export default function Navbar() {
             <ul className="flex items-center menu gap-[2.7rem]">
               <GrClose className="absolute block text-2xl top-9 right-7 lg:hidden" />
 
-              <Link href={"/register"} className="block lg:hidden">
+              <Link href={"/register"} className="block sm:hidden">
                 <Button>Register Pasien</Button>
               </Link>
               {navLinks.map((link, index) => (

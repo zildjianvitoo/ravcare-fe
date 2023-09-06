@@ -1,3 +1,4 @@
+import { sora } from "@/public/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -31,7 +32,9 @@ export default function DokterCard({ dokter }) {
         {name}
       </h2>
       <div className="flex items-center justify-between mt-2 lg:mt-4">
-        <span className="text-primary-ravcare py-1 px-2 lg:py-2 bg-[#D3E5FB] lg:px-6 text-[12px] leading-4 rounded lg:text-[16px] lg:leading-7 font-semibold">
+        <span
+          className={`text-primary-ravcare py-1 px-2 lg:py-2 bg-[#D3E5FB] lg:px-6 text-[12px] leading-4 rounded lg:text-[16px] lg:leading-7 font-semibold ${sora.className}`}
+        >
           {specialization}
         </span>
         <div className="flex items-center gap-[6px]">
@@ -39,7 +42,7 @@ export default function DokterCard({ dokter }) {
             <AiFillStar className="text-primary-ravcare text-[18px] lg:text-[20px]" />
             {avgRating}
           </span>
-          <span className=" text-[14px] leading-6 lg:text-[16px] lg:leading-7 font-semibold text-heading-color-ravcare">
+          <span className=" text-[14px] leading-6 lg:text-[16px] lg:leading-7  text-text-color-ravcare">
             ({totalRating})
           </span>
         </div>
@@ -50,7 +53,9 @@ export default function DokterCard({ dokter }) {
           <h3 className="text-[16px] leading-7 lg:text-[18px] lg:leading-[30px] font-semibold text-heading-color-ravcare">
             +{totalPatients}
           </h3>
-          <p className="text-[14px] leading-6 text-text-color-ravcare">
+          <p
+            className={`text-[14px] leading-6 text-text-color-ravcare ${sora.className}`}
+          >
             {hospital}
           </p>
         </div>

@@ -22,11 +22,11 @@ html {
   }
 
   .heading {
-    @apply text-[44px] leading-[54px] font-bold text-heading-color-ravcare;
+    @apply text-[44px] leading-[54px] font-semibold text-heading-color-ravcare;
   }
 
   .text-para {
-    @apply text-[18px] leading-[30px] font-normal text-para-color-ravcare mt-[18px] text-text-color-ravcare;
+    @apply text-[18px] leading-[30px] font-normal text-text-color-ravcare mt-[18px] text-text-color-ravcare;
   }
 
   .header {
@@ -81,7 +81,7 @@ html {
 
 @media only screen and (max-width: 768px) {
   .heading {
-    @apply text-[26px] leading-[36px];
+    @apply text-3xl;
   }
 
   .text-para {
