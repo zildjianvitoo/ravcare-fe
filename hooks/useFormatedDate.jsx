@@ -3,7 +3,7 @@ import React from "react";
 export default function useFormatedDate(data, config) {
   const defaultOptions = {
     day: "numeric",
-    month: "long",
+    month: "short",
     year: "numeric",
   };
 

@@ -41,7 +41,7 @@ export default function Benefit() {
             </p>
             <Link href={"/reservasi"} className="w-fit lg:w-[30%]">
               <Button
-                className="mt-8 text-base "
+                className="mt-8 text-base hover:translate-y-0"
                 icon={
                   <RiHealthBookLine
                     className="text-2xl mb-0.5
@@ -80,7 +80,7 @@ export default function Benefit() {
             </p>
             <Link href={"/reservasi"} className="w-fit  lg:w-[30%]">
               <Button
-                className="mt-8 text-base "
+                className="mt-8 text-base hover:translate-y-0"
                 icon={
                   <RiHealthBookLine
                     className="text-2xl mb-0.5

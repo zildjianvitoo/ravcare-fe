@@ -31,7 +31,8 @@ export default function Deskripsi() {
               <span
                 className={`text-primary-ravcare text-[15px] leading-6 font-semibold ${sora.className}`}
               >
-                4 Oktober 2016
+                {useFormatedDate("2015-03-25T12:00:00Z")} -{" "}
+                {useFormatedDate("8-10-2019")}
               </span>
               <p
                 className={`text-[16px] leading-6  text-text-color-ravcare ${sora.className} `}
@@ -50,7 +51,7 @@ export default function Deskripsi() {
               <span
                 className={`text-primary-ravcare text-[15px] leading-6 font-semibold ${sora.className}`}
               >
-                {useFormatedDate("4-10-2016")}
+                {useFormatedDate("4-10-2020")} - {useFormatedDate("8-8-2022")}
               </span>
               <p
                 className={`text-[16px] leading-6  text-text-color-ravcare ${sora.className} `}
@@ -62,6 +63,45 @@ export default function Deskripsi() {
               className={`text-[16px] leading-5 text-text-color-ravcare ${sora.className} `}
             >
               Universitas Gajah Mada, Yogyakarta
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div className="mt-12">
+        <h3 className="text-[20px] leading-[30px] text-heading-color-ravcare font-semibold">
+          Pendidikan
+        </h3>
+        <ul className="grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5">
+          <li className="p-4 rounded bg-[#E2EDFF]">
+            <span className="text-[15px] leading-6 font-semibold text-primary-ravcare">
+              {useFormatedDate("2020-03-25T12:00:00Z")} -{" "}
+              {useFormatedDate("2020-05-25T12:00:00Z")}
+            </span>
+            <p
+              className={`text-[16px] leading-6  text-text-color-ravcare ${sora.className} `}
+            >
+              Ahli Bedah
+            </p>
+            <p
+              className={`text-[14px] leading-5  text-text-color-ravcare ${sora.className} `}
+            >
+              Rumah Sakit Charitas, Palembang
+            </p>
+          </li>
+          <li className="p-4 rounded bg-[#E2EDFF]">
+            <span className="text-[15px] leading-6 font-semibold text-primary-ravcare">
+              {useFormatedDate("2020-03-25T12:00:00Z")} -{" "}
+              {useFormatedDate("2020-05-25T12:00:00Z")}
+            </span>
+            <p
+              className={`text-[16px] leading-6  text-text-color-ravcare ${sora.className} `}
+            >
+              Ahli Bedah
+            </p>
+            <p
+              className={`text-[14px] leading-5  text-text-color-ravcare ${sora.className} `}
+            >
+              Rumah Sakit Charitas, Palembang
             </p>
           </li>
         </ul>

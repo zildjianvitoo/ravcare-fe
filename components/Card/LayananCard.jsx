@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 export default function LayananCard({ item, index }) {
   const { name, desc, bgColor, textColor } = item;
   return (
-    <div className="py-[30px] px-3 lg:px-5">
+    <div className="py-[30px] px-3 lg:px-5 border border-primary-ravcare rounded-[20px] shadow-sm ">
       <h2 className="text-[26px] leading-9 text-transparent bg-clip-text bg-gradient-to-r from-primary-ravcare to-secondary-ravcare font-bold  w-fit ">
         {name}
       </h2>
@@ -15,7 +15,7 @@ export default function LayananCard({ item, index }) {
       >
         {desc}
       </p>
-      <div className="flex items-center justify-between mt-[30px]">
+      <div className="flex flex-row-reverse items-center justify-between mt-[30px]">
         <Link
           href={"/dokter"}
           className="w-[44px] h-[44px] rounded-full border border-[#181a1e]  flex items-center justify-center group hover:bg-primary-ravcare hover:border-none"

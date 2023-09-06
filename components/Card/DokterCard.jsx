@@ -18,16 +18,18 @@ export default function DokterCard({ dokter }) {
   } = dokter;
   return (
     <div className="p-3 w-fit lg:p-5">
-      <figure className=" w-fit">
-        <Image
-          src={photo}
-          alt={"Foto Dokter"}
-          width={400}
-          height={400}
-          quality={100}
-          className="rounded-[20px]"
-        />
-      </figure>
+      <Link href={`/dokter/${id}`}>
+        <figure className=" w-fit">
+          <Image
+            src={photo}
+            alt={"Foto Dokter"}
+            width={400}
+            height={400}
+            quality={100}
+            className="rounded-[20px]"
+          />
+        </figure>
+      </Link>
       <h2 className="text-[18px] leading-[30px] lg:text-[26px] lg:leading-9 text-heading-color-ravcare font-bold mt-3 lg:mt-5">
         {name}
       </h2>

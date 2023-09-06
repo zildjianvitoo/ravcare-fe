@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Dokter() {
   return (
-    <main>
+    <main className="bg-[#f9fbfc]">
       <CariDokter />
       <DokterList />
       <Testimonial />
