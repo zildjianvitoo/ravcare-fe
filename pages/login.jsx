@@ -1,4 +1,5 @@
 import Button from "@/components/Button/Button";
+import InputForm from "@/components/Input/InputForm";
 import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
@@ -10,7 +11,7 @@ export default function Login() {
     formState: { errors },
   } = useForm();
 
-  const onSubmitHandler = (formValues) => {
+  const onSubmitHandler = async (formValues) => {
     console.log(formValues);
   };
 
@@ -26,17 +27,19 @@ export default function Login() {
             className="flex flex-col gap-5 py-4 md:py-0"
             onSubmit={handleSubmit(onSubmitHandler)}
           >
-            <input
-              type="email"
-              placeholder="Masukkan emailmu"
-              className="w-full px-4 py-3 border-b border-secondary-ravcare/80 focus:outline-none focus:border-r-primary-ravcare text-[16px] leading-7 text-heading-color-ravcare placeholder:text-text-color-ravcare rounded-md  focus:border-b-2"
-              {...register("email", { required: true })}
+            <InputForm
+              type={"email"}
+              placeholder={"Email"}
+              labelFor={"email"}
+              isError={errors?.email}
+              register={register}
             />
-            <input
-              type="password"
-              placeholder="Kata sandi"
-              className="w-full px-4 py-3 border-b border-secondary-ravcare/80 focus:outline-none focus:border-r-primary-ravcare text-[16px] leading-7 text-heading-color-ravcare placeholder:text-text-color-ravcare rounded-md focus:border-b-2 "
-              {...register("email", { required: true })}
+            <InputForm
+              type={"password"}
+              placeholder={"Kata sandi"}
+              labelFor={"password"}
+              isError={errors?.password}
+              register={register}
             />
             <Button
               className="mt-2 text-lg rounded-xl hover:translate-y-0"

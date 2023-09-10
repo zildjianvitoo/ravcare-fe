@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar/Navbar";
 import "@/styles/globals.css";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,6 +22,7 @@ export default function App({ Component, pageProps }) {
         <Navbar />
         <Component {...pageProps} />
         <Footer />
+        <ToastContainer position="top-right" />
       </div>
     </>
   );
