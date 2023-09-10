@@ -35,7 +35,7 @@ export default function Register() {
   };
 
   return (
-    <main className="bg-[#f9fbfc]">
+    <main className="bg-[#f9fbfc] overflow-x-hidden">
       <section className="px-5 lg:px-0 py-14">
         <div className="w-full max-w-[1170px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 ">

@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Dokter() {
   return (
-    <main className="bg-[#f9fbfc]">
+    <main className="bg-[#f9fbfc] overflow-x-hidden">
       <CariDokter />
       <DokterList />
       <Testimonial />

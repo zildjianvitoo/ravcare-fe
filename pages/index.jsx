@@ -7,7 +7,7 @@ import Testimonial from "@/components/LandingPage/Testimonial";
 
 export default function Home() {
   return (
-    <main className="bg-[#f9fbfc]">
+    <main className="bg-[#f9fbfc] overflow-x-hidden">
       <Jumbotron />
       <Partner />
       <DaftarDukungan />

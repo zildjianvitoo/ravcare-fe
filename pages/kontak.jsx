@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Kontak() {
   return (
-    <main className="bg-[#f9fbfc]">
+    <main className="bg-[#f9fbfc] overflow-x-hidden">
       <section>
         <div className="max-w-screen-md px-4 mx-auto">
           <h1 className="text-center heading">Hubungi Kami</h1>

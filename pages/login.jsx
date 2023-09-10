@@ -16,7 +16,7 @@ export default function Login() {
   };
 
   return (
-    <main className="bg-[#f9fbfc] ">
+    <main className="bg-[#f9fbfc] overflow-x-hidden">
       <section className="px-5 lg:px-0 py-14">
         <div className="w-full max-w-xl px-3 mx-auto rounded-lg shadow-md md:p-10">
           <h3 className="text-heading-color-ravcare text-[22px] leading-9 font-bold mb-10">

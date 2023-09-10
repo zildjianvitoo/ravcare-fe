@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Layanan() {
   return (
-    <main className="bg-[#f9fbfc]">
+    <main className="bg-[#f9fbfc] overflow-x-hidden">
       <section>
         <div className="flex flex-col mx-auto text-center">
           <h1 className="text-center heading">Layanan Kami</h1>
