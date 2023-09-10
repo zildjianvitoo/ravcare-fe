@@ -7,6 +7,7 @@ function Button({
   className,
   icon = <PiStethoscopeDuotone className="text-2xl" />,
   children,
+  ...props
 }) {
   return (
     <button
@@ -15,6 +16,7 @@ function Button({
           sora.className,
         className
       )}
+      {...props}
     >
       {icon} <p>{children}</p>
     </button>
