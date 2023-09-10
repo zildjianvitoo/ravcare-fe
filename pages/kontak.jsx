@@ -7,7 +7,7 @@ export default function Kontak() {
     <main className="bg-[#f9fbfc]">
       <section>
         <div className="max-w-screen-md px-4 mx-auto">
-          <h2 className="text-center heading">Hubungi Kami</h2>
+          <h1 className="text-center heading">Hubungi Kami</h1>
           <p
             className={`mb-8 font-light text-center lg:mb-12 text-para ${sora.className}`}
           >

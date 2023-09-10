@@ -5,6 +5,7 @@ import { Poppins } from "next/font/google";
 import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
+import "aos/dist/aos.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
