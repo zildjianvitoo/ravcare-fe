@@ -1,5 +1,4 @@
 import DaftarDukunganCard from "../Card/DaftarDukunganCard";
-import AOS from "aos";
 import { RiHospitalLine } from "react-icons/ri";
 import { BsHeartPulse } from "react-icons/bs";
 import { sora } from "@/public/fonts";
